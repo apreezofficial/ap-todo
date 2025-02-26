@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APCodeSphere Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+    <!-- 🔥 Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- 🎭 Header with Profile Icon & Theme Switch -->
+    <div class="header">
+        <div class="profile-icon" id="profileIcon">A</div>
+
+        <div class="theme-switch">
+            <input type="radio" name="theme" id="themeDark" checked>
+            <label for="themeDark" class="theme-label dark">🌑</label>
+
+            <input type="radio" name="theme" id="themeLight">
+            <label for="themeLight" class="theme-label light">☀️</label>
+
+            <input type="radio" name="theme" id="themeCyber">
+            <label for="themeCyber" class="theme-label cyber">⚡</label>
+        </div>
+    </div>
+
+    <!-- 🎭 Login & Signup Form -->
+    <div class="container dark">
+        <h2 id="formTitle">Login</h2>
+
+        <div class="input-group">
+            <input type="text" id="username" placeholder="Username">
+        </div>
+        
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Password">
+        </div>
+        
+        <button id="submitBtn">Login</button>
+
+        <p id="switchText">Don't have an account? <span id="switchBtn">Sign Up</span></p>
+        <p id="message"></p>
+    </div>
+
+    <!-- ✅ To-Do List Section -->
+    <div id="todoSection" class="todo-container dark" style="display: none;">
+        <h2>📌 Your To-Do List</h2>
+        <input type="text" id="todoInput" placeholder="Enter a task...">
+        <button id="addToDo">Add Task</button>
+        <ul id="todoList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
